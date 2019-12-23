@@ -4,6 +4,8 @@ const facade = {
      * Resolves the Genitive case for the provided name.
      */
     getGenitive: function (name) {
+        if(!name || !name.length) return null;
+
         let builderArray = name.split("");
 
         if (name.endsWith("a")) {
@@ -56,6 +58,8 @@ const facade = {
      * Resolves the Dative case for the provided name.
      */
     getDative: function (name) {
+        if(!name || !name.length) return null;
+
         let builderArray = name.split("");
 
         if (name.endsWith("a")) {
@@ -115,6 +119,8 @@ const facade = {
      * Resolves the Accusative case for the provided name.
      */
     getAccusative: function (name) {
+        if(!name || !name.length) return null;
+
         let builderArray = name.split("");
 
         if (name.endsWith("a")) {
@@ -174,6 +180,8 @@ const facade = {
      * Resolves the Vocative case for the provided name.
      */
     getVocative: function (name) {
+        if(!name || !name.length) return null;
+
         let builderArray = name.split("");
 
         // TODO: Dugouzlazni akcenat za A.
@@ -222,13 +230,15 @@ const facade = {
      * Resolves the Instrumental case for the provided name.
      */
     getInstrumental: function (name) {
+        if(!name || !name.length) return null;
+
         let builderArray = name.split("");
 
         if (['a', 'e', 'i', 'o', 'u'].includes(name[name.length - 1])) {
             builderArray = builderArray.slice(0, -1);
         }
 
-        builderArray.Append("om");
+        builderArray.push("om");
 
         return builderArray.join("");
     },
