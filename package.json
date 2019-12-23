@@ -1,0 +1,28 @@
+{
+  "name": "vocative",
+  "version": "1.0.0",
+  "description": "NPM package repository for name-case switching JS algorithm.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kockarevicivan/vocative.git"
+  },
+  "keywords": [
+    "vocative",
+    "js",
+    "case",
+    "noun",
+    "name",
+    "serbian",
+    "vokativ"
+  ],
+  "author": "Ivan Kockarevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kockarevicivan/vocative/issues"
+  },
+  "homepage": "https://github.com/kockarevicivan/vocative#readme"
+}
